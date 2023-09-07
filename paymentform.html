@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+</head>
+<body>
+<div class="container">
+    
+    <form action="datatype.csv" method="post"> 
+    <h1>payment form!</h1>
+    <p class="sub">>>fill the form to pay..<p>
+        <hr>
+        
+    
+        <h2>contact information</h2>
+    <fieldset>
+        <p class="a">Name: <input type="text" id="name"name="Name"></p>
+        <legend>>>user information<<</legend>
+        <p class="a">Male <input type="radio" name="gender" id="male" required>Female <input type="radio" name="gender" id="female" required></p>
+        <p class="a">Address: <textarea name="Address" id="Address" cols="80" rows="4" placeholder="enter you addres here..."></textarea></p>
+        <p class="a">city:
+            <select name="city" id="city" >
+                
+                <option value=" ">select your city </option>
+                <option value="pokhara">Pokhara</option>
+                <option value="ktm">Ktm</option>
+                <option value="dharan">Dharan</option>
+                <option value="htd">Htd</option>
+                
+            </select>
+        </p>
+        <aaditya>
+            <p class="a">Email: <input type="email" name="email" id="email" required></p>
+            <p class="a">Birthdate: <input type="date" name="birthdate" id="birthdate" required></p>
+        </aaditya>
+
+
+
+          
+        
+    </fieldset>
+    <hr>
+    <h2>payment method</h2>
+
+    <fieldset>
+        <legend> >>payment informatio<<</legend>
+        <em>
+        <p>paying ammount: <input type="number" name="paying_amount" id="paying_amount" required></p>
+        <p class="b">Card type:
+            <select name="card_type" id="card_type" require">
+            <option value="">Chose your card_type</option>
+            <option value="Visa">Visa </option>
+            <option value="master_card">master_card</option>
+            <option value="pay_pal">pay_pal</option>
+            <option value="money_key">money_key</option>
+            <option value="k_card">k_card</option>
+            </select>
+        </p>
+        <p>Pin code: <input type="number" name="pin code" id="pin code" required></p>
+        <p>Card_number: <input type="number" name="Card_number" id="Card_number" required></p>
+        <p>Password: <input type="password" name="password" id="password" required></p>
+    </em>
+        
+    </fieldset>
+    <hr>
+    <input type="submit" value="Pay now" class="x"> <input type="reset" value="Reset" class="y">
+
+ </form>
+</div>
+<footer>
+    <a href="#">FAQ</a>
+    <a href="#">contact</a>
+    <a href="#">privacy_policy</a>
+    <a href="#">share</a>
+    </select>
+    
+
+</footer>
+    
+</body>
+</html>
